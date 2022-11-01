@@ -13,15 +13,15 @@ const eso2o = {
       for (let i in results) {
         sumatorio += results[i];
       }
-      console.log (sumatorio);
+     
       let media = sumatorio/results.length;
-      console.log (media);
 
       if (media === 10) {
         console.log("La media de la clase es: Matrícula de Honor");
         
       } else if (9 <= media && media< 10) {
         console.log("La media de la clase es: Sobresaliente");
+        
       } else if (7 <= media && media< 9) {
         console.log("La media de la clase es: Notable");
         
