@@ -1,16 +1,25 @@
-// function values(object) {
+function values(object) {
 
-//   var properties = [];
-//   for (const property in object) {
-//     properties.push(object[property]);
-//   }
-//   return properties;
-// }
-  
-function values(obj) {
-  var object = Object.values(obj);
-  return object;
+  var properties = [];
+  for (const property in object) {
+    if (typeof object[property] === "function"){
+
+    }
+    else {
+      properties.push(object[property]);
+    }
+    
+  }
+  return properties;
 }
+
+
+
+
+// function values(obj) {
+//   var object = Object.values(obj);
+//   return object;
+// }
 
 function Person(name, edad) {
   this.name = name;
