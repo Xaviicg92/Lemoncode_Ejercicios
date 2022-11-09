@@ -1,6 +1,6 @@
 // APARTADO A
 
-// Primera forma
+// PRIMERA FORMA
 
 // function clone(source) {
 //     var clone;
@@ -19,7 +19,7 @@
 // console.log(clone(Persona));
 
 
-// Segunda forma
+// SEGUNDA FORMA
 
 function clone(source) {
     var clone = {};

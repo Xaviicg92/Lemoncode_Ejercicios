@@ -1,34 +1,9 @@
+
 // APARTADO A
+
 var user = { name: "María", age: 30 };
 var clonedUser = { name: "María", age: 30 };
 
-//console.log(user === clonedUser); // false
-
-// function isEqual(a, b) {
-//     if (a.hasOwnProperty("name", "age") && b.hasOwnProperty("name", "age")) {
-//         var nameA;
-//         var nameB;
-//         var ageA;
-//         var ageB;
-//         nameA = a.name;
-//         nameB = b.name;
-//         ageA = a.age;
-//         ageB = b.age;
-
-//         if (nameA === nameB && ageA === ageB){
-//             debugger;
-//             return true;
-//         }
-
-//         else {
-//             return false;
-//         }
-//     }
-
-//     else {
-//         return false;
-//     }
-// }
 
 
 function isEqual(a, b) {
@@ -50,7 +25,7 @@ function isEqual(a, b) {
 
 
 
-//console.log(isEqual(user, clonedUser)); // true
+console.log(isEqual(user, clonedUser)); 
 
 
 // APARTADO B
@@ -92,4 +67,4 @@ function isDeepEqual(a, b) {
     return true;
   }
   
-  console.log(isDeepEqual(user, clonedUser)); // true
+  console.log(isDeepEqual(user, clonedUser)); 

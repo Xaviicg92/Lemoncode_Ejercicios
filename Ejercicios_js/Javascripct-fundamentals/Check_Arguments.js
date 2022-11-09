@@ -11,6 +11,8 @@
 //     return result;
 //   }
 
+// PRIMERA FORMA CON OPERADOR TERNARIO
+
 function f(input) {
     var result;
     result = (input === undefined) ? "Unknown" : (input === null) ? "" : input;
@@ -19,6 +21,9 @@ function f(input) {
 
 let input = undefined;
 console.log(f(input));
+
+
+// SEGUNDA FORMA CON OPERADOR OR
 
 // function f2(input) {
 //     var result; 
