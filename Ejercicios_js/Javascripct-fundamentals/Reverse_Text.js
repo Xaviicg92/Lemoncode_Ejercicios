@@ -1,7 +1,6 @@
-// const reverseString = str => str.split(" ").reverse().join(" ");
-// const a = "Buenas hola adios"
-// console.log(a)
-// console.log(reverseString(a));
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
 
 
 function reverseString (string) {

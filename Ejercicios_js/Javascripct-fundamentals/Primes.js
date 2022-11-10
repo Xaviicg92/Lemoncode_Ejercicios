@@ -1,3 +1,7 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
 function showPrimes(from, to) {
 
    for (i = from; i <= to; i++) {

@@ -1,4 +1,4 @@
-//  APARTADO A
+
 var a = 1;
 
 (function() {

@@ -1,3 +1,8 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
+
 function subsets(word) {
     let array = [];
     while (word.length > 1){

@@ -1,3 +1,7 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
 
 // APARTADO A
 
@@ -31,9 +35,6 @@ const init = (array) => {
 }; 
 
 init(myArray);
-
-
-
 
 
 

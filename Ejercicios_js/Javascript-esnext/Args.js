@@ -1,3 +1,7 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
 function f(a, { b } = {}, c = 100) {
     console.log(arguments.length);
     console.log(a, a === arguments[0]);

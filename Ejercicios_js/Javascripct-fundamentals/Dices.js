@@ -1,3 +1,7 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
 
 // function tamaño_dado(num) {
 //     var dado = []

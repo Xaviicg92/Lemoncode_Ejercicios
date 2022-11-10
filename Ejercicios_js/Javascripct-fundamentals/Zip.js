@@ -1,4 +1,6 @@
-
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
 
   function zipObject(keys, values) {
     let object = {};

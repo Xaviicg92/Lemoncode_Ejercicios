@@ -1,3 +1,6 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
 
 
 function biggestWord (phrase) {

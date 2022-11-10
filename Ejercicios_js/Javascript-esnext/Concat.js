@@ -1,3 +1,8 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
+
 let array1 = [1, 2, 3];
 let array2 = [3, 5, 7];
 let array3 = [9, 5, 6];

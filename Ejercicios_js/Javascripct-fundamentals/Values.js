@@ -1,3 +1,9 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
+// PRIMERA FORMA
+
 function values(object) {
 
   var properties = [];
@@ -14,7 +20,7 @@ function values(object) {
 }
 
 
-
+// SEGUNDA FORMA
 
 // function values(obj) {
 //   var object = Object.values(obj);

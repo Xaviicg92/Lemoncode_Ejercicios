@@ -1,3 +1,7 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
 function isBookRead(books, titleToSearch) {
     for (let index = 0; index < books.length; index++) {
         if (books[index].title === titleToSearch){

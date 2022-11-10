@@ -1,3 +1,10 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
+
+
+
+
 const eso2o = {
     David: 8.25,
     Maria: 9.5,

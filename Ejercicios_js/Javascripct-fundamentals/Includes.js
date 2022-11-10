@@ -1,4 +1,9 @@
+/**
+ * AUTHOR : JAVIER CAMBÓN GANDARIAS
+ */
 
+
+// PRIMERA FORMA
 
 // function includes(array, value) {
 //     for (const property in array) {
@@ -9,26 +14,29 @@
 //     return false;
 // }
 
-
-function includes(array, value) {
-    for (i = 0; i < array.length; i ++) {
-        if (array[i] === value){
-            return true;
-        }
-    }
-    return false;
-}
+// SEGUNDA FORMA
 
 // function includes(array, value) {
-//     const isLargeNumber = (element) => element = value;
-//     var indice = array.findIndex(isLargeNumber);
-//     console.log(indice);
-//     var resultado = (indice =! -1) ? true : false;
-//     return resultado;
+//     for (i = 0; i < array.length; i ++) {
+//         if (array[i] === value){
+//             return true;
+//         }
+//     }
+//     return false;
 // }
 
 
+// TERCERA FORMA
+
+function includes(array, value) {
+    if (array.indexOf(value) === -1) {
+        return false;
+    }
+    return true;
+}
 
 
-  console.log(includes([1, 2, 3], 3)); // true
-  console.log(includes([1, 2, 3], 0)); // false
+
+
+  console.log(includes([1, 2, 3], 3)); 
+  console.log(includes([1, 2, 3], 0)); 
