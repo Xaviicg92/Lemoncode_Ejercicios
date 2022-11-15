@@ -17,16 +17,16 @@
 //     return result;
 //   }
 
-// PRIMERA FORMA CON OPERADOR TERNARIO
+// PRIMERA FORMA CON OPERADOR TERNARIO UTILIZAR JUNTO CON OR
 
 function f(input) {
-    var result;
-    result = (input === undefined) ? "Unknown" : (input === null) ? "" : input;
-    return result;
+    
+    return input === undefined ? "Unknown" : input === null ? "" : input;
 }
 
 let input = undefined;
-console.log(f(input));
+f(input);
+//console.log(f(input));
 
 
 // SEGUNDA FORMA CON OPERADOR OR

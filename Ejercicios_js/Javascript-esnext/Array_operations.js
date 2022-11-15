@@ -6,9 +6,9 @@
 // APARTADO A
 
 // const head = array => array[0]; 
- const head = ([_first, ...nums]) => _first; 
+ const head = ([_first]) => _first; 
  var myArray = [5,6,8,2,1,4,7];
- console.log(head(myArray));
+ console.log("head: ", head(myArray));
 
 
 // APARTADO B
@@ -21,8 +21,8 @@
 // };
 // console.log(tail(1,8,3,6,478,5,2));
 
-const tail = (_first, ...nums) => nums;
-console.log(tail(1,8,3,6,478,5,2));
+const tail = ([, ...nums]) => nums;
+console.log("tail: " ,tail([1,8,3,6,478,5,2]));
 
 
 // APARTADO C

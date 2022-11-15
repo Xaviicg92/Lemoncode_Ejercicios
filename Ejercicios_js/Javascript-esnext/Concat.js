@@ -17,19 +17,19 @@ console.log(concat(array1, array2))
 
 // APARTADO B
 
-// const concatBetter = () => {
-//     let resultado = [];
-//     for (i = 0; i <= arguments.length; i++){
-//         var myArray = arguments[i];
+const concatBetter = (...num) => {
+    let resultado = [];
+    for (i = 0; i <= arguments.length; i++){
+        var myArray = arguments[i];
         
-//         resultado.push(myArray)
+        resultado.push(myArray)
 
-//     }
-//     console.log (resultado);
-//     return ([...resultado]);
-// };
+    }
+    console.log (resultado);
+    return ([...resultado]);
+};
 
-// console.log(concatBetter(array1, array2, array3))
+console.log(concatBetter(array1, array2, array3))
 
 
 
