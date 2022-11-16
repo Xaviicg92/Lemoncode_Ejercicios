@@ -2,44 +2,31 @@
  * AUTHOR : JAVIER CAMBÓN GANDARIAS
  */
 
+ var myArray = [5,6,8,2,1,4,7];
 
 // APARTADO A
 
-// const head = array => array[0]; 
  const head = ([_first]) => _first; 
- var myArray = [5,6,8,2,1,4,7];
+
  console.log("head: ", head(myArray));
 
 
 // APARTADO B
 
-// const tail = (...nums) => {
-//     var newArray = nums.slice(1,nums.length);
-//     newArray.forEach(element => {
-//         console.log(element)
-//     });
-// };
-// console.log(tail(1,8,3,6,478,5,2));
-
 const tail = ([, ...nums]) => nums;
-console.log("tail: " ,tail([1,8,3,6,478,5,2]));
+console.log("tail: " , tail(myArray));
 
 
 // APARTADO C
 
-const init = (array) => {
-    var newArray = array.slice(0,(array.length-1));
-    newArray.forEach(element => {
-        console.log(element)
-    });
-}; 
-
-init(myArray);
+const init = (array) => array.slice(0,(array.length-1));
+console.log("init: ", init(myArray));
 
 
 
 
 // // APARTADO D
 
-const last = (array) => array.slice(-1);
-console.log(last(myArray)); 
+const last = (array) => array.slice(-1).shift();
+//const last = (array) => array.slice(-1).toString();
+console.log("last: ", last(myArray)); 

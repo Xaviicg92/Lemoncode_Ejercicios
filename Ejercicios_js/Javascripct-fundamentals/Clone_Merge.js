@@ -2,12 +2,24 @@
  * AUTHOR : JAVIER CAMBÓN GANDARIAS
  */
 
-
+var Person = {
+    name: "Javier",
+    surname: "Cambón",
+    country: "España"
+}
 
 
 // APARTADO A
 
 // PRIMERA FORMA
+
+function clone(source) {
+    let clone = {...source};
+    return clone;
+  }
+  console.log("Resultado apartado a: ", clone(Person));
+
+// SEGUNDA FORMA
 
 // function clone(source) {
 //     var clone;
@@ -15,37 +27,27 @@
 //     return clone;
 //   }
 
-// var Persona = {
-//     nombre: "Javier",
-//     apellido: "Cambón",
-//     pais: "España"
+// var number = 2;
+// console.log(clone(number));
+// console.log(clone(Person));
+
+
+// TERCERA FORMA
+
+// function clone(source) {
+//     var clone = {};
+//     for (const property in source) {
+//         clone[property] = source[property];
+//     }
+//     clone = (typeof source === "object") ? clone : "No has introducido un objeto";
+//     return clone;
 // }
+
+
 
 // var number = 2;
 // console.log(clone(number));
-// console.log(clone(Persona));
-
-
-// SEGUNDA FORMA
-
-function clone(source) {
-    var clone = {};
-    for (const property in source) {
-        clone[property] = source[property];
-    }
-    clone = (typeof source === "object") ? clone : "No has introducido un objeto";
-    return clone;
-}
-
-var Person = {
-    name: "Javier",
-    surname: "Cambón",
-    country: "España"
-}
-
-var number = 2;
-console.log(clone(number));
-console.log(clone(Person));
+// console.log("Resultado apartado a: ", clone( Person));
 
 
 // APARTADO B
@@ -60,5 +62,5 @@ function merge(source, target) {
     return merge;
   }
 
- var result = merge (b,a);
- console.log (result);
+ var result = merge(b,a);
+ console.log ("Resultado apartado b: ", result);

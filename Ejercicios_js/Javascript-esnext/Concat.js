@@ -6,12 +6,13 @@
 let array1 = [1, 2, 3];
 let array2 = [3, 5, 7];
 let array3 = [9, 5, 6];
+let array4 = [7, 2, 10, 8, 23, 8];
 
 
 
 // APARTADO A
 const concat = (a, b) => [...a, ...b]; 
-console.log(concat(array1, array2))
+console.log("Resultado apartado A: ", concat(array1, array2));
 
 
 
@@ -19,17 +20,16 @@ console.log(concat(array1, array2))
 
 const concatBetter = (...num) => {
     let resultado = [];
-    for (i = 0; i <= arguments.length; i++){
-        var myArray = arguments[i];
-        
-        resultado.push(myArray)
+    for (const arg of num) {
+        for (const element of arg){
+            resultado.push(element);
+        }
+      }
 
-    }
-    console.log (resultado);
-    return ([...resultado]);
+      return resultado;
 };
 
-console.log(concatBetter(array1, array2, array3))
+console.log ("Resultado apartado B: ", concatBetter(array1, array2, array3, array4));
 
 
 
